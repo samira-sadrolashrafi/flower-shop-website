@@ -64,3 +64,11 @@ flower-shop-website/
     │   └── style.css
     └── imgs/
         └── project images
+
+## Purpose
+
+This project was created to practice building a complete multi-page website using HTML and CSS, with a focus on page structure, responsive design, layout, styling, and maintaining a consistent user interface across different sections of the website.
+
+## Author
+
+Samira Sadr
