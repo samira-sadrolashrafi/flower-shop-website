@@ -29,16 +29,15 @@ The project focuses on creating a consistent visual experience across all pages 
 ## Features
 
 - Responsive multi-page layout
-- Consistent design across all pages
-- Product listing interface
-- Individual product details page
+- Consistent visual design across all pages
+- Product catalog interface
+- Individual product detail page
 - Shopping cart interface
-- Checkout page
-- Order confirmation page
-- User profile page
+- Checkout and order confirmation flow
+- User profile interface
 - Contact page
 - Navigation between connected pages
-- Reusable visual patterns and consistent styling
+- Layout adaptation for different screen sizes
 
 ## Technologies Used
 
@@ -58,16 +57,18 @@ flower-shop-website/
 ├── order-complete.html
 ├── profile.html
 ├── contact.html
-│
 └── assets/
     ├── css/
     │   └── style.css
     └── imgs/
         └── project images
+```
 
 ## Purpose
 
-This project was created to practice building a complete multi-page website using HTML and CSS, with a focus on page structure, responsive design, layout, styling, and maintaining a consistent user interface across different sections of the website.
+This project was created to practice building a complete multi-page website using HTML and CSS.
+
+The main focus was on organizing multiple connected pages, creating consistent layouts and visual styles, implementing responsive design, and building common e-commerce user interface sections such as product listings, product details, shopping cart, checkout, and user profile pages.
 
 ## Author
 
