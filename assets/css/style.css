@@ -1,0 +1,3474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Markazi Text", serif;
+    background-color: #f8f5ef;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+.header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+.header h1 {
+    color: #2f5d3a;
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+
+/* منوی سایت */
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #2e7d32;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #2e7d32;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* بخش معرفی اول صفحه */
+
+.hero {
+    background-color: #e8f3e6;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    width: 55%;
+    text-align: right;
+}
+
+.hero-subtitle {
+    color: #b65b2a;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    color: #2f5d3a;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.hero-text p {
+    color: #444;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #2f5d3a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.hero-btn:hover {
+    background-color: #24492e;
+}
+
+.hero-outline-btn {
+    display: inline-block;
+    color: #2f5d3a;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #2f5d3a;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.hero-outline-btn:hover {
+    background-color: #ffffff;
+}
+
+.hero-image {
+    width: 38%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+    height: auto;
+}
+
+
+/* بخش خدمات فروشگاه */
+
+.service-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 24%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.service-item h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* بخش دسته بندی محصولات */
+
+.categories-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.categories-section h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.categories-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 23%;
+    background-color: #ffffff;
+    padding: 25px 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-card h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.category-card a {
+    color: #b65b2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* بخش مناسبت ها */
+
+.occasion-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.occasion-text {
+    width: 35%;
+}
+
+.small-title {
+    color: #b65b2a;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.occasion-text h2 {
+    color: #2f5d3a;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.occasion-text p {
+    color: #555;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.occasion-cards {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.occasion-card {
+    width: 48%;
+    background-color: #f7f3ed;
+    padding: 20px 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.occasion-card h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.occasion-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* بخش محصولات */
+
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products-section h2 {
+    color: #2f5d3a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* ظرف کارت‌های محصول - حالت عادی برای صفحه محصولات */
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* اسکرول افقی فقط برای محصولات ویژه صفحه اصلی */
+
+.home-products-container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 1275px;
+    margin: 0 auto;
+    padding: 10px 5px 25px 5px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #8aa58f #dcd6cc;
+}
+
+
+/* کارت محصول */
+
+.product-card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 300px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.product-card h3 {
+    color: #2f5d3a;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.english-name {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price {
+    display: block;
+    color: #b65b2a;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4f925f;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #3d6b49;
+}
+
+.btn-cart {
+    background-color: #d17f51;
+}
+
+.btn-cart:hover {
+    background-color: #af6137;
+}
+
+
+/* ابزارهای بالای صفحه محصولات */
+
+.products-tools {
+    width: 100%;
+    margin: 0 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-search {
+    width: 55%;
+    display: flex;
+}
+
+.products-search input {
+    width: 75%;
+    padding: 11px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.products-search input:focus {
+    border-color: #2f5d3a;
+}
+
+.products-search button {
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.products-search button:hover {
+    background-color: #24492e;
+}
+
+.products-sort {
+    width: 38%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.products-sort span {
+    color: #555;
+    margin-left: 8px;
+}
+
+.products-sort select {
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.products-sort select:focus {
+    border-color: #2f5d3a;
+}
+
+
+/* تعداد محصولات */
+
+.products-count {
+    width: 100%;
+    margin: 0 0 25px 0;
+    background-color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* چیدمان کلی صفحه محصولات به همراه سایدبار فیلتر */
+
+.products-layout {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.products-main {
+    flex: 1;
+    min-width: 0;
+    order: 1;
+}
+
+
+/* سایدبار فیلتر */
+
+.filter-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    order: 2;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    position: static;
+    top: 20px;
+}
+
+.filter-sidebar h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #e8f3e6;
+}
+
+.filter-group {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.filter-group h4 {
+    color: #2f5d3a;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.filter-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-check:hover {
+    color: #2f5d3a;
+}
+
+.filter-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #2f5d3a;
+    cursor: pointer;
+}
+
+.color-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+
+.dot-red {
+    background-color: #d9483c;
+}
+
+.dot-yellow {
+    background-color: #ffe680;
+}
+
+.dot-white {
+    background-color: #ffffff;
+    border-color: #bbbbbb;
+}
+
+.dot-pink {
+    background-color: #e8779c;
+}
+
+.dot-purple {
+    background-color: #9b59b6;
+}
+
+.dot-blue {
+    background-color: #4a90d9;
+}
+
+.filter-check .color-dot {
+    margin-left: 0;
+}
+
+.apply-filters-btn {
+    display: block;
+    width: 100%;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: 0.3s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #24492e;
+}
+
+.clear-filters-btn {
+    display: block;
+    text-align: center;
+    color: #a84f22;
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.clear-filters-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* برچسب موجودی روی کارت محصول */
+
+.product-card {
+    position: relative;
+}
+
+.stock-label {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #e8f3e6;
+    color: #2f5d3a;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* کارت مشاهده همه محصولات داخل اسکرول */
+
+.view-all-card {
+    min-width: 220px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+
+/* بخش پیشنهاد ویژه */
+
+.special-offer-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7c0ff1d;
+    padding: 35px;
+    border-radius: 18px;
+}
+
+.special-offer-image {
+    width: 35%;
+    text-align: center;
+}
+
+.special-offer-image img {
+    width: 75%;
+    height: auto;
+}
+
+.special-offer-text {
+    width: 60%;
+}
+
+.special-offer-text h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.special-offer-text p {
+    color: #555;
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.special-offer-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.special-offer-info span {
+    background-color: #ffffff;
+    color: #2f5d3a;
+    padding: 7px 14px;
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+/* بخش مزایای فروشگاه */
+
+.advantages-section {
+    background-color: #e8f3e6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.advantages-section h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.advantages-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-card {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.advantage-card h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.advantage-card p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* بخش نظرات کاربران */
+
+.reviews-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-card {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.review-card p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.review-card h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.review-card span {
+    color: #888;
+    font-size: 15px;
+}
+
+
+/* بخش درباره فروشگاه در صفحه اصلی */
+
+.home-about-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.home-about-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-about-text {
+    width: 62%;
+}
+
+.home-about-text h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.home-about-text p {
+    color: #555;
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.home-about-box {
+    width: 32%;
+    background-color: #f7f3ed;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+.home-about-box h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.home-about-box p {
+    color: #555;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* بخش ارتباط بیشتر */
+
+.home-links-section {
+    width: 50%;
+    margin: 60px auto;
+    background-color: #f0cda230;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.home-links-section h2 {
+    color: #2f5d3a;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.home-links-section p {
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.home-links-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* فوتر */
+
+.footer {
+    background-color: #ffffff;
+    color: #2f5d3a;
+    text-align: center;
+    padding: 18px;
+}
+
+
+/* ظاهر اسکرول افقی در Chrome / Edge */
+
+.products-container::-webkit-scrollbar {
+    height: 12px;
+}
+
+.products-container::-webkit-scrollbar-track {
+    background-color: #dcd6cc;
+    border-radius: 10px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background-color: #8aa58f;
+    border-radius: 10px;
+}
+
+.products-container::-webkit-scrollbar-thumb:hover {
+    background-color: #4d815b;
+}
+
+
+/* ظاهر اسکرول در Firefox */
+
+.products-container {
+    scrollbar-width: thin;
+    scrollbar-color: #8aa58f #dcd6cc;
+}
+
+/* صفحه جزئیات محصول */
+
+.product-details-container {
+    margin: 60px auto;
+}
+
+
+/* نمایش فقط محصول انتخاب شده */
+
+.product-section {
+    display: none;
+    scroll-margin-top: 120px;
+}
+
+.product-section:target {
+    display: block;
+}
+
+
+/* مسیر صفحه */
+
+.page-path {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    color: #777;
+    font-size: 16px;
+}
+
+.page-path a {
+    color: #2f5d3a;
+    text-decoration: none;
+}
+
+.page-path span {
+    margin-left: 6px;
+}
+
+
+/* کادر اصلی محصول */
+
+.product-details {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+/* تصویر محصول */
+
+.product-details-image {
+    width: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-details-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* اطلاعات محصول */
+
+.product-details-info {
+    width: 50%;
+}
+
+.product-category {
+    display: inline-block;
+    background-color: #e8f1e9;
+    color: #2f5d3a;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.product-details-info h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.product-name-en {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* وضعیت موجودی محصول */
+
+.product-status {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 13px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.available {
+    color: #2f7d46;
+    font-weight: bold;
+}
+
+
+/* برچسب ویژگی‌های محصول */
+
+.product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.product-tags span {
+    background-color: #e8f1e9;
+    color: #2f5d3a;
+    padding: 6px 13px;
+    border-radius: 20px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+
+/* توضیحات محصول */
+
+.product-description {
+    color: #555;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+
+/* مشخصات محصول */
+
+.product-specs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    margin-bottom: 22px;
+}
+
+.product-spec-item {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f3ed;
+    padding: 13px 15px;
+    border-radius: 9px;
+}
+
+.product-spec-item p {
+    color: #777;
+    margin: 0;
+}
+
+.product-spec-item span {
+    color: #2f5d3a;
+    font-weight: bold;
+}
+
+
+/* قیمت محصول */
+
+.product-price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff4eb;
+    padding: 17px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-price-box > span:first-child {
+    color: #555;
+}
+
+.product-details-price {
+    color: #a84f22;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* انتخاب تعداد */
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.quantity-box p {
+    color: #333;
+    font-size: 17px;
+    margin: 0;
+}
+
+.quantity-box input {
+    width: 75px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.quantity-box input:focus {
+    border-color: #2f5d3a;
+}
+
+
+/* دکمه‌های محصول */
+
+.product-details-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.details-cart-btn {
+    flex: 1;
+    display: block;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.details-cart-btn:hover {
+    background-color: #244a2e;
+}
+
+.back-products-btn {
+    flex: 1;
+    display: block;
+    background-color: transparent;
+    color: #2f5d3a;
+    padding: 12px 20px;
+    border: 2px solid #2f5d3a;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.back-products-btn:hover {
+    background-color: #e8f1e9;
+}
+
+
+/* یادداشت نمایشی بودن سبد خرید */
+
+.product-note {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* بخش راهنمای نگهداری */
+
+.care-section {
+    width: 80%;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+
+.care-section > h2 {
+    color: #2f5d3a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.care-title-text {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.care-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.care-card {
+    width: 23%;
+    background-color: #ffffff;
+    padding: 25px 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.care-card:hover {
+    transform: translateY(-5px);
+}
+
+.care-card h3 {
+    color: #2f5d3a;
+    margin-bottom: 10px;
+}
+
+.care-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* صفحه سبد خرید */
+
+.cart-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.cart-section > h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.cart-description {
+    color: #777;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* مراحل خرید */
+
+.cart-steps {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.cart-step {
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.cart-step span {
+    width: 35px;
+    height: 35px;
+    background-color: #f7f3ed;
+    color: #2f5d3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.cart-step p {
+    font-size: 17px;
+}
+
+.active-step span {
+    background-color: #2f5d3a;
+    color: #ffffff;
+}
+
+.active-step p {
+    color: #2f5d3a;
+    font-weight: bold;
+}
+
+
+/* محتوای اصلی سبد خرید */
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart-products {
+    width: 66%;
+}
+
+.order-summary {
+    width: 31%;
+}
+
+
+/* محصول داخل سبد خرید */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cart-item-info {
+    width: 28%;
+}
+
+.cart-item-info h3 {
+    color: #2f5d3a;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.cart-item-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.cart-product-name {
+    color: #999;
+}
+
+
+/* تعداد محصول */
+
+.cart-item-quantity {
+    text-align: center;
+}
+
+.cart-item-quantity p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.cart-item-quantity input {
+    width: 65px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+}
+
+.cart-item-quantity input:focus {
+    border-color: #2f5d3a;
+}
+
+
+/* قیمت محصول */
+
+.cart-item-price {
+    text-align: center;
+}
+
+.cart-item-price p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.cart-item-price span {
+    color: #a84f22;
+    font-weight: bold;
+}
+
+
+/* حذف محصول */
+
+.cart-item-remove a {
+    color: #b94a48;
+    text-decoration: none;
+    border: 1px solid #b94a48;
+    padding: 7px 12px;
+    border-radius: 7px;
+}
+
+.cart-item-remove a:hover {
+    background-color: #b94a48;
+    color: #ffffff;
+}
+
+
+/* دکمه‌های پایین محصولات */
+
+.cart-page-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.continue-shopping-btn {
+    color: #2f5d3a;
+    text-decoration: none;
+    border: 2px solid #2f5d3a;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.continue-shopping-btn:hover {
+    background-color: #e8f1e9;
+}
+
+.clear-cart-btn {
+    color: #b94a48;
+    text-decoration: none;
+    border: 2px solid #b94a48;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.clear-cart-btn:hover {
+    background-color: #b94a48;
+    color: #ffffff;
+}
+
+
+/* خلاصه سفارش */
+
+.order-summary {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.order-summary h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.summary-divider {
+    border-top: 1px solid #dddddd;
+    margin: 22px 0;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    color: #2f5d3a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* کد تخفیف */
+
+.discount-box {
+    background-color: #f7f3ed;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.discount-box p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.discount-input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-input-box input {
+    width: 68%;
+    padding: 9px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-family: "Markazi Text", serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.discount-input-box input:focus {
+    border-color: #2f5d3a;
+}
+
+.discount-input-box a {
+    width: 28%;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px;
+    border-radius: 7px;
+}
+
+.discount-input-box a:hover {
+    background-color: #24492e;
+}
+
+
+/* دکمه ثبت سفارش */
+
+.checkout-btn {
+    display: block;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.checkout-btn:hover {
+    background-color: #244a2e;
+}
+
+
+/* پیام امنیت سفارش */
+
+.cart-secure-message {
+    background-color: #e8f1e9;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-secure-message h4 {
+    color: #2f5d3a;
+    margin-bottom: 6px;
+}
+
+.cart-secure-message p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* صفحه ثبت سفارش */
+
+.checkout-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.checkout-section > h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.checkout-description {
+    color: #777;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* مراحل ثبت سفارش */
+
+.checkout-steps {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.checkout-step {
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.checkout-step span {
+    width: 35px;
+    height: 35px;
+    background-color: #f7f3ed;
+    color: #2f5d3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.checkout-step p {
+    font-size: 17px;
+}
+
+.active-checkout-step span {
+    background-color: #2f5d3a;
+    color: #ffffff;
+}
+
+.active-checkout-step p {
+    color: #2f5d3a;
+    font-weight: bold;
+}
+
+
+/* محتوای اصلی صفحه ثبت سفارش */
+
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout-form-box {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.checkout-summary {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.checkout-form-box h3,
+.checkout-summary h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+
+/* ردیف‌های فرم */
+
+.checkout-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.checkout-form-group {
+    width: 48%;
+}
+
+.checkout-form-group p {
+    color: #555;
+    margin-bottom: 7px;
+}
+
+.checkout-form-group input,
+.checkout-form-group select,
+.checkout-form-group textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-family: "Markazi Text", serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.checkout-form-group input:focus,
+.checkout-form-group select:focus,
+.checkout-form-group textarea:focus {
+    border-color: #2f5d3a;
+}
+
+.checkout-full-width {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.checkout-form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* روش پرداخت */
+
+.payment-method-box {
+    background-color: #f7f3ed;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.payment-method-box h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-option {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment-option input {
+    margin-left: 8px;
+}
+
+.payment-option span {
+    color: #555;
+}
+
+
+/* بخش قوانین */
+
+.checkout-rules {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.checkout-rules input {
+    margin-left: 8px;
+}
+
+.checkout-rules p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* محصول داخل خلاصه سفارش */
+
+.checkout-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f3ed;
+    padding: 12px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
+.checkout-product-image {
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.checkout-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.checkout-product-info {
+    width: 38%;
+}
+
+.checkout-product-info h4 {
+    color: #2f5d3a;
+    margin-bottom: 4px;
+}
+
+.checkout-product-info p {
+    color: #777;
+    font-size: 14px;
+}
+
+.checkout-product-price {
+    color: #a84f22;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* مبلغ‌های سفارش */
+
+.checkout-summary-item {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.checkout-summary-line {
+    border-top: 1px solid #dddddd;
+    margin: 22px 0;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    color: #2f5d3a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* دکمه‌های صفحه ثبت سفارش */
+
+.submit-order-btn {
+    width: 100%;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.submit-order-btn:hover {
+    background-color: #244a2e;
+}
+
+.back-cart-btn {
+    display: block;
+    color: #2f5d3a;
+    text-decoration: none;
+    text-align: center;
+    padding: 11px;
+    border: 2px solid #2f5d3a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.back-cart-btn:hover {
+    background-color: #e8f1e9;
+}
+
+.checkout-note {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* صفحه پروفایل */
+
+.profile-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.profile-section > h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.profile-description {
+    color: #777;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-card {
+    width: 32%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.profile-card h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-card > p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.profile-info-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f3ed;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.profile-btn {
+    display: block;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.profile-btn:hover {
+    background-color: #244a2e;
+}
+
+.profile-details {
+    width: 65%;
+}
+
+.profile-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.profile-box h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f3ed;
+    padding: 15px;
+    border-radius: 9px;
+    margin-bottom: 12px;
+}
+
+.order-item h4 {
+    color: #2f5d3a;
+    margin-bottom: 4px;
+}
+
+.order-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+.order-item span {
+    color: #a84f22;
+    font-weight: bold;
+}
+
+.profile-address {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+.profile-note {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* صفحه درباره ما */
+
+.about-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.about-section > h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.about-description {
+    color: #777;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+
+/* محتوای معرفی درباره ما */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    margin-bottom: 30px;
+}
+
+.about-image {
+    width: 40%;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+}
+
+.about-text {
+    width: 48%;
+    margin: 0 auto;
+}
+
+.about-small-title {
+    color: #b65b2a;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.about-text h3 {
+    color: #2f5d3a;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about-buttons {
+    display: flex;
+}
+
+.about-btn {
+    display: inline-block;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 25px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.about-btn:hover {
+    background-color: #244a2e;
+}
+
+.about-outline-btn {
+    display: inline-block;
+    color: #2f5d3a;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #2f5d3a;
+    border-radius: 8px;
+}
+
+.about-outline-btn:hover {
+    background-color: #e8f1e9;
+}
+
+
+/* آمار نمایشی */
+
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about-stat-card {
+    width: 23%;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.about-stat-card h3 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.about-stat-card p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* اهداف فروشگاه */
+
+.about-goals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8f3e6;
+    padding: 35px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.about-goals-text {
+    width: 32%;
+    margin: 0 auto;
+}
+
+.about-goals-text h3 {
+    color: #2f5d3a;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.about-goals-text p {
+    color: #555;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-goals-list {
+    width: 58%;
+}
+
+.about-goal-item {
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.about-goal-item h4 {
+    color: #2f5d3a;
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+.about-goal-item p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ویژگی‌های درباره ما */
+
+.about-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about-feature-card {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 25px 18px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.about-feature-card span {
+    width: 45px;
+    height: 45px;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.about-feature-card h3 {
+    color: #2f5d3a;
+    margin-bottom: 10px;
+}
+
+.about-feature-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* کادر پایانی درباره ما */
+
+.about-final-box {
+    background-color: #f0cda230;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.about-final-box h3 {
+    color: #2f5d3a;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.about-final-box p {
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 2;
+}
+
+/* صفحه تماس با ما */
+
+.contact-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.contact-section > h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.contact-description {
+    color: #777;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+
+/* محتوای اصلی تماس */
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.contact-info {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.contact-form h3,
+.contact-info h3 {
+    color: #2f5d3a;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.contact-form-description,
+.contact-info-description {
+    color: #777;
+    margin-bottom: 22px;
+    line-height: 1.8;
+}
+
+
+/* فرم تماس */
+
+.contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.contact-form-group {
+    width: 48%;
+}
+
+.contact-full-width {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.contact-form-group p {
+    color: #555;
+    margin-bottom: 7px;
+    text-align: right;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-family: "Markazi Text", serif;
+    font-size: 15px;
+    outline: none;
+    text-align: right;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    border-color: #2f5d3a;
+}
+
+.contact-form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-submit-btn {
+    width: 100%;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+.contact-submit-btn:hover {
+    background-color: #244a2e;
+}
+
+.contact-note {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* اطلاعات تماس */
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f7f3ed;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.contact-info-item > span {
+    background-color: #2f5d3a;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.contact-info-item h4 {
+    color: #2f5d3a;
+    margin-bottom: 4px;
+}
+
+.contact-info-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* شبکه‌های ارتباطی */
+
+.contact-social-box {
+    background-color: #e8f3e6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.contact-social-box h4 {
+    color: #2f5d3a;
+    margin-bottom: 12px;
+}
+
+.contact-social-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-social-links a {
+    background-color: #ffffff;
+    color: #2f5d3a;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 20px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+
+.contact-social-links a:hover {
+    background-color: #2f5d3a;
+    color: #ffffff;
+}
+
+
+/* نقشه واقعی فروشگاه */
+
+.contact-map-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8f3e6;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.contact-map-text {
+    width: 45%;
+}
+
+.contact-map-text h3 {
+    color: #2f5d3a;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-map-text p {
+    color: #555;
+    line-height: 2;
+    text-align: justify;
+}
+
+.map-box {
+    width: 50%;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/* بخش‌های جدید اضافه‌شده به صفحه اصلی    */
+
+/* مراحل خرید */
+
+.steps-section {
+    background-color: #e8f3e6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.steps-section h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.steps-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-card {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+}
+
+.step-card span {
+    width: 45px;
+    height: 45px;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step-card h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.step-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* سوالات متداول */
+
+.faq-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    color: #2f5d3a;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.faq-list {
+    width: 70%;
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    text-align: right;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    color: #2f5d3a;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.faq-item summary::marker {
+    display: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2f5d3a;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item[open] summary {
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.9;
+}
+
+
+/* خبرنامه */
+
+.newsletter-section {
+    background-color: #43a45ab3;
+    padding: 60px 20px;
+}
+
+.newsletter-content {
+    width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    color: #d9e8db;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    width: 55%;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: #b65b2a;
+    color: #ffffff;
+    border: none;
+    padding: 13px 26px;
+    border-radius: 8px 0 0 8px;
+    font-family: "Markazi Text", serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #a04f24;
+}
+
+/* صفحه تکمیل سفارش */
+
+.order-complete-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+
+/* مراحل تکمیل سفارش */
+
+.order-complete-steps {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.order-complete-step {
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+}
+
+.order-complete-step span {
+    width: 35px;
+    height: 35px;
+    background-color: #f7f3ed;
+    color: #2f5d3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.order-complete-step p {
+    font-size: 17px;
+}
+
+.active-order-complete-step span {
+    background-color: #2f5d3a;
+    color: #ffffff;
+}
+
+.active-order-complete-step p {
+    color: #2f5d3a;
+    font-weight: bold;
+}
+
+
+/* جعبه موفقیت سفارش */
+
+.success-box {
+    background-color: #ffffff;
+    padding: 45px 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #2f5d3a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin: 0 auto 20px auto;
+}
+
+.success-box h2 {
+    color: #2f5d3a;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.success-box > p {
+    color: #666666;
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.9;
+}
+
+.order-meta {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.order-meta-item {
+    background-color: #f7f3ed;
+    border-radius: 10px;
+    padding: 14px 22px;
+    min-width: 170px;
+}
+
+.order-meta-item span {
+    display: block;
+}
+
+.order-meta-item span:first-child {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.order-meta-item span:last-child {
+    color: #2f5d3a;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* خلاصه سفارش و اطلاعات ارسال */
+
+.order-complete-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    text-align: right;
+}
+
+.order-complete-summary,
+.order-complete-delivery {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.order-complete-summary h3,
+.order-complete-delivery h3 {
+    color: #2f5d3a;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* دکمه‌ها و یادداشت پایانی */
+
+.order-complete-buttons {
+    margin-top: 35px;
+}
+
+.order-complete-note {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+/* ============================= */
+/* دسترس‌پذیری فرم‌ها */
+/* ============================= */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.checkout-form-group label,
+.contact-form-group label {
+    display: block;
+    color: #555;
+    margin-bottom: 7px;
+    text-align: right;
+}
+
+.quantity-box label,
+.cart-item-quantity label,
+.discount-box label {
+    display: block;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.checkout-rules label {
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.products-sort label {
+    color: #555;
+    margin-left: 8px;
+}
+
+/* ============================= */
+/* طراحی واکنش‌گرا */
+/* ============================= */
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        margin: 5px 8px;
+    }
+
+    .hero-content,
+    .service-section,
+    .occasion-section,
+    .special-offer-section,
+    .advantages-container,
+    .reviews-container,
+    .home-about-content,
+    .about-content,
+    .about-goals,
+    .contact-content,
+    .contact-map-section,
+    .cart-content,
+    .checkout-content,
+    .profile-content,
+    .order-complete-content {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image,
+    .occasion-text,
+    .occasion-cards,
+    .special-offer-image,
+    .special-offer-text,
+    .home-about-text,
+    .home-about-box,
+    .about-image,
+    .about-text,
+    .about-goals-text,
+    .about-goals-list,
+    .contact-form,
+    .contact-info,
+    .contact-map-text,
+    .map-box,
+    .cart-products,
+    .order-summary,
+    .checkout-form-box,
+    .checkout-summary,
+    .profile-card,
+    .profile-details,
+    .order-complete-summary,
+    .order-complete-delivery {
+        width: 100%;
+    }
+
+    .hero-image,
+    .special-offer-image,
+    .about-image {
+        margin-top: 25px;
+    }
+
+    .service-section,
+    .categories-container,
+    .advantages-container,
+    .reviews-container,
+    .about-stats,
+    .about-features,
+    .steps-container {
+        flex-wrap: wrap;
+    }
+
+    .service-item,
+    .category-card,
+    .advantage-card,
+    .review-card,
+    .about-stat-card,
+    .about-feature-card,
+    .step-card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .products-layout {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .filter-sidebar,
+    .products-main {
+        width: 100%;
+        order: initial;
+    }
+
+    .products-tools {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .products-search,
+    .products-sort {
+        width: 100%;
+    }
+
+    .products-sort {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .products-count {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .products-count span + span {
+        margin-top: 7px;
+    }
+
+    .product-details,
+    .page-path,
+    .care-section {
+        width: 90%;
+    }
+
+    .product-details {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .product-details-image,
+    .product-details-info {
+        width: 100%;
+    }
+
+    .care-card {
+        width: 48%;
+    }
+
+    .cart-section,
+    .checkout-section,
+    .about-section,
+    .contact-section,
+    .profile-section,
+    .order-complete-section {
+        width: 90%;
+    }
+
+    .order-summary,
+    .checkout-summary,
+    .contact-info,
+    .profile-details,
+    .order-complete-delivery {
+        margin-top: 30px;
+    }
+
+    .contact-map-section {
+        align-items: stretch;
+    }
+
+    .map-box {
+        margin-top: 20px;
+    }
+
+    .about-goals-list {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .hero,
+    .categories-section,
+    .products-section,
+    .advantages-section,
+    .reviews-section,
+    .home-about-section,
+    .steps-section,
+    .newsletter-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .hero-content,
+    .service-section,
+    .categories-container,
+    .occasion-section,
+    .special-offer-section,
+    .advantages-container,
+    .reviews-container,
+    .home-about-content,
+    .home-links-section,
+    .products-layout,
+    .product-details,
+    .page-path,
+    .care-section,
+    .cart-section,
+    .checkout-section,
+    .about-section,
+    .contact-section,
+    .profile-section,
+    .order-complete-section {
+        width: 94%;
+    }
+
+    .hero-text h2,
+    .categories-section h2,
+    .products-section h2,
+    .advantages-section h2,
+    .reviews-section h2,
+    .home-about-text h2,
+    .steps-section h2,
+    .newsletter-content h2 {
+        font-size: 27px;
+    }
+
+    .hero-text p,
+    .section-description,
+    .occasion-text p,
+    .special-offer-text p,
+    .home-about-text p {
+        font-size: 17px;
+    }
+
+    .hero-buttons,
+    .home-links-buttons,
+    .about-buttons,
+    .product-details-buttons,
+    .cart-page-buttons,
+    .payment-options {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .hero-btn,
+    .hero-outline-btn,
+    .about-btn,
+    .about-outline-btn,
+    .details-cart-btn,
+    .back-products-btn,
+    .continue-shopping-btn,
+    .clear-cart-btn {
+        width: 100%;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .service-item,
+    .category-card,
+    .occasion-card,
+    .advantage-card,
+    .review-card,
+    .about-stat-card,
+    .about-feature-card,
+    .step-card,
+    .care-card {
+        width: 100%;
+    }
+
+    .occasion-section,
+    .special-offer-section,
+    .about-content,
+    .about-goals,
+    .contact-map-section,
+    .product-details,
+    .checkout-form-box,
+    .checkout-summary,
+    .order-summary,
+    .contact-form,
+    .contact-info,
+    .success-box {
+        padding: 20px;
+    }
+
+    .products-search {
+        flex-direction: column;
+    }
+
+    .products-search input,
+    .products-search button,
+    .products-sort select {
+        width: 100%;
+    }
+
+    .products-search button {
+        margin: 8px 0 0 0;
+    }
+
+    .products-sort {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .products-sort label {
+        margin: 0 0 7px 0;
+    }
+
+    .products-main .products-container {
+        gap: 18px;
+    }
+
+    .products-main .product-card {
+        width: 100%;
+        min-width: 0;
+        flex: 0 1 100%;
+    }
+
+    .home-products-container .product-card {
+        width: 280px;
+        min-width: 280px;
+        flex: 0 0 280px;
+    }
+
+    .product-details-container {
+        margin: 35px auto;
+    }
+
+    .product-details {
+        gap: 25px;
+    }
+
+    .product-status,
+    .product-price-box {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .product-status span + span,
+    .product-price-box span + span {
+        margin-top: 5px;
+    }
+
+    .product-spec-item {
+        width: 100%;
+    }
+
+    .cart-steps,
+    .checkout-steps,
+    .order-complete-steps {
+        padding: 12px 8px;
+    }
+
+    .cart-step,
+    .checkout-step,
+    .order-complete-step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-step span,
+    .checkout-step span,
+    .order-complete-step span {
+        margin: 0 0 5px 0;
+    }
+
+    .cart-step p,
+    .checkout-step p,
+    .order-complete-step p {
+        font-size: 13px;
+    }
+
+    .cart-item {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .cart-item-image {
+        width: 100%;
+        height: 230px;
+        margin-bottom: 15px;
+    }
+
+    .cart-item-info {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .cart-item-quantity,
+    .cart-item-price,
+    .cart-item-remove {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .discount-input-box {
+        flex-direction: column;
+    }
+
+    .discount-input-box input,
+    .discount-input-box a {
+        width: 100%;
+    }
+
+    .discount-input-box a {
+        margin-top: 8px;
+    }
+
+    .checkout-form-row,
+    .contact-form-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .checkout-form-group,
+    .contact-form-group {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .payment-option {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .checkout-product {
+        flex-wrap: wrap;
+    }
+
+    .checkout-product-info {
+        width: calc(100% - 80px);
+    }
+
+    .checkout-product-price {
+        width: 100%;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .about-stats,
+    .about-features {
+        flex-direction: column;
+    }
+
+    .contact-info-item {
+        flex-direction: column;
+    }
+
+    .contact-info-item > span {
+        margin: 0 0 8px 0;
+    }
+
+    .contact-info-item p,
+    .profile-info-item,
+    .order-item,
+    .order-meta-item {
+        overflow-wrap: anywhere;
+    }
+
+    .map-box {
+        height: 260px;
+    }
+
+    .newsletter-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .newsletter-form button {
+        margin-top: 8px;
+    }
+
+    .order-complete-buttons a {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}

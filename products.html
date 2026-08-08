@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات | خانه گل</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header class="header">
+        <h1>خانه گل</h1>
+
+        <nav class="navbar">
+            <a href="index.html">صفحه اصلی</a>
+            <a href="products.html">محصولات</a>
+            <a href="profile.html">پروفایل</a>
+            <a href="about.html">درباره ما</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start products page -->
+    <main>
+
+        <section class="products-section">
+
+            <h2>همه محصولات</h2>
+
+            <p class="section-description">
+                در این صفحه می‌توانید تمام گل‌های فروشگاه خانه گل را مشاهده کنید.
+            </p>
+
+
+            <!-- start products layout -->
+            <div class="products-layout">
+
+                <!-- start filter sidebar -->
+                <aside class="filter-sidebar">
+
+                    <h3>فیلترها</h3>
+
+                    <!-- start filter group: flower type -->
+                    <div class="filter-group">
+                        <h4>نوع گل</h4>
+
+                        <label class="filter-check"><input type="checkbox">گل‌های شاخه‌ای</label>
+                        <label class="filter-check"><input type="checkbox">گل‌های مناسبتی</label>
+                        <label class="filter-check"><input type="checkbox">گل‌های تزئینی</label>
+                        <label class="filter-check"><input type="checkbox">گل‌های خاص</label>
+                    </div>
+                    <!-- end filter group: flower type -->
+
+
+                    <!-- start filter group: color -->
+                    <div class="filter-group">
+                        <h4>رنگ</h4>
+
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-red"></span>قرمز</label>
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-yellow"></span>زرد</label>
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-white"></span>سفید</label>
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-pink"></span>صورتی</label>
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-purple"></span>بنفش</label>
+                        <label class="filter-check"><input type="checkbox"><span class="color-dot dot-blue"></span>آبی</label>
+                    </div>
+                    <!-- end filter group: color -->
+
+
+                    <!-- start filter group: price range -->
+                    <div class="filter-group">
+                        <h4>محدوده قیمت</h4>
+
+                        <label class="filter-check"><input type="checkbox">تا 150,000 تومان</label>
+                        <label class="filter-check"><input type="checkbox">150,000 تا 250,000 تومان</label>
+                        <label class="filter-check"><input type="checkbox">بالای 250,000 تومان</label>
+                    </div>
+                    <!-- end filter group: price range -->
+
+
+                    <!-- start filter group: occasion -->
+                    <div class="filter-group">
+                        <h4>مناسبت</h4>
+
+                        <label class="filter-check"><input type="checkbox">تولد</label>
+                        <label class="filter-check"><input type="checkbox">عروسی</label>
+                        <label class="filter-check"><input type="checkbox">تسلیت</label>
+                        <label class="filter-check"><input type="checkbox">عاشقانه</label>
+                        <label class="filter-check"><input type="checkbox">روز مادر</label>
+                    </div>
+                    <!-- end filter group: occasion -->
+
+
+                    <!-- start filter group: availability -->
+                    <div class="filter-group">
+                        <h4>وضعیت</h4>
+
+                        <label class="filter-check"><input type="checkbox">فقط محصولات موجود</label>
+                        <label class="filter-check"><input type="checkbox">فقط محصولات تخفیف‌دار</label>
+                    </div>
+                    <!-- end filter group: availability -->
+
+
+                    <button type="button" class="apply-filters-btn">اعمال فیلترها</button>
+                    <a href="products.html" class="clear-filters-btn">پاک کردن فیلترها</a>
+
+                </aside>
+                <!-- end filter sidebar -->
+
+
+                <!-- start products main -->
+                <div class="products-main">
+
+                <!-- start products tools -->
+                <div class="products-tools">
+
+                    <form class="products-search" action="#" method="get">
+                        <label for="product-search" class="visually-hidden">جستجوی محصول</label>
+                        <input type="text" id="product-search" name="search" placeholder="جستجوی نمایشی محصول">
+                        <button type="submit">جستجو</button>
+                    </form>
+
+                    <div class="products-sort">
+                        <label for="products-sort">مرتب‌سازی:</label>
+
+                        <select id="products-sort" name="sort">
+                            <option>جدیدترین محصولات</option>
+                            <option>ارزان‌ترین</option>
+                            <option>گران‌ترین</option>
+                            <option>محبوب‌ترین</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- end products tools -->
+
+
+                <!-- start products count -->
+                <div class="products-count">
+                    <span>تعداد محصولات موجود: 16 محصول</span>
+                    <span>فیلترها به‌صورت نمایشی طراحی شده‌اند.</span>
+                </div>
+                <!-- end products count -->
+
+
+                <!-- start products container -->
+                <div class="products-container">
+
+                    <!-- شروع کارت محصول گل رز -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/rose.png" alt="گل رز">
+                        <h3>گل رز</h3>
+                        <p class="english-name">Rose</p>
+                        <p>رنگ: قرمز</p>
+                        <span class="price">250,000 تومان</span>
+
+                        <a href="product-details.html#rose" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل رز -->
+
+
+                    <!-- شروع کارت محصول گل لاله -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/tulip.png" alt="گل لاله">
+                        <h3>گل لاله</h3>
+                        <p class="english-name">Tulip</p>
+                        <p>رنگ: زرد</p>
+                        <span class="price">180,000 تومان</span>
+
+                        <a href="product-details.html#tulip" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل لاله -->
+
+
+                    <!-- شروع کارت محصول گل سوسن -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/lily.jpg" alt="گل سوسن">
+                        <h3>گل سوسن</h3>
+                        <p class="english-name">Lily</p>
+                        <p>رنگ: صورتی</p>
+                        <span class="price">220,000 تومان</span>
+
+                        <a href="product-details.html#lily" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل سوسن -->
+
+
+                    <!-- شروع کارت محصول گل ارکیده -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/orchid.png" alt="گل ارکیده">
+                        <h3>گل ارکیده</h3>
+                        <p class="english-name">Orchid</p>
+                        <p>رنگ: بنفش</p>
+                        <span class="price">320,000 تومان</span>
+
+                        <a href="product-details.html#orchid" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل ارکیده -->
+
+
+                    <!-- شروع کارت محصول گل آفتابگردان -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/sunflower.png" alt="گل آفتابگردان">
+                        <h3>گل آفتابگردان</h3>
+                        <p class="english-name">Sunflower</p>
+                        <p>رنگ: زرد</p>
+                        <span class="price">190,000 تومان</span>
+
+                        <a href="product-details.html#sunflower" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل آفتابگردان -->
+
+
+                    <!-- شروع کارت محصول گل یاس -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/jasmine.png" alt="گل یاس">
+                        <h3>گل یاس</h3>
+                        <p class="english-name">Jasmine</p>
+                        <p>رنگ: سفید</p>
+                        <span class="price">160,000 تومان</span>
+
+                        <a href="product-details.html#jasmine" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل یاس -->
+
+
+                    <!-- شروع کارت محصول گل اسطوخودوس -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/lavender.png" alt="گل اسطوخودوس">
+                        <h3>گل اسطوخودوس</h3>
+                        <p class="english-name">Lavender</p>
+                        <p>رنگ: بنفش</p>
+                        <span class="price">170,000 تومان</span>
+
+                        <a href="product-details.html#lavender" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل اسطوخودوس -->
+
+
+                    <!-- شروع کارت محصول گل میخک -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/carnation.png" alt="گل میخک">
+                        <h3>گل میخک</h3>
+                        <p class="english-name">Carnation</p>
+                        <p>رنگ: صورتی</p>
+                        <span class="price">150,000 تومان</span>
+
+                        <a href="product-details.html#carnation" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل میخک -->
+
+
+                    <!-- شروع کارت محصول گل داوودی -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/chrysanthemum.png" alt="گل داوودی">
+                        <h3>گل داوودی</h3>
+                        <p class="english-name">Chrysanthemum</p>
+                        <p>رنگ: سفید</p>
+                        <span class="price">200,000 تومان</span>
+
+                        <a href="product-details.html#chrysanthemum" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل داوودی -->
+
+
+                    <!-- شروع کارت محصول گل ادریسی -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/hydrangea.png" alt="گل ادریسی">
+                        <h3>گل ادریسی</h3>
+                        <p class="english-name">Hydrangea</p>
+                        <p>رنگ: آبی</p>
+                        <span class="price">280,000 تومان</span>
+
+                        <a href="product-details.html#hydrangea" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل ادریسی -->
+
+
+                    <!-- شروع کارت محصول گل نرگس -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/daffodil.png" alt="گل نرگس">
+                        <h3>گل نرگس</h3>
+                        <p class="english-name">Daffodil</p>
+                        <p>رنگ: سفید و زرد</p>
+                        <span class="price">140,000 تومان</span>
+
+                        <a href="product-details.html#daffodil" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل نرگس -->
+
+
+                    <!-- شروع کارت محصول گل صدتومانی -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/peony.png" alt="گل صدتومانی">
+                        <h3>گل صدتومانی</h3>
+                        <p class="english-name">Peony</p>
+                        <p>رنگ: صورتی</p>
+                        <span class="price">210,000 تومان</span>
+
+                        <a href="product-details.html#peony" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل صدتومانی -->
+
+
+                    <!-- شروع کارت محصول گل مریم -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/tuberose.jpg" alt="گل مریم">
+                        <h3>گل مریم</h3>
+                        <p class="english-name">Tuberose</p>
+                        <p>رنگ: سفید</p>
+                        <span class="price">210,000 تومان</span>
+
+                        <a href="product-details.html#tuberose" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل مریم -->
+
+
+                    <!-- شروع کارت محصول گل آنتوریوم -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/anthurium.png" alt="گل آنتوریوم">
+                        <h3>گل آنتوریوم</h3>
+                        <p class="english-name">Anthurium</p>
+                        <p>رنگ: قرمز</p>
+                        <span class="price">210,000 تومان</span>
+
+                        <a href="product-details.html#anthurium" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل آنتوریوم -->
+
+
+                    <!-- شروع کارت محصول گل بابونه -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/chamomile.png" alt="گل بابونه">
+                        <h3>گل بابونه</h3>
+                        <p class="english-name">Chamomile</p>
+                        <p>رنگ: سفید</p>
+                        <span class="price">210,000 تومان</span>
+
+                        <a href="product-details.html#chamomile" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل بابونه -->
+
+
+                    <!-- شروع کارت محصول گل آزالیا -->
+                    <div class="product-card">
+                        <span class="stock-label">موجود</span>
+                        <img src="assets/imgs/azalea.png" alt="گل آزالیا">
+                        <h3>گل آزالیا</h3>
+                        <p class="english-name">Azalea</p>
+                        <p>رنگ: صورتی</p>
+                        <span class="price">210,000 تومان</span>
+
+                        <a href="product-details.html#azalea" class="btn">مشاهده جزئیات</a>
+                        <a href="cart.html" class="btn btn-cart">افزودن به سبد خرید</a>
+                    </div>
+                    <!-- پایان کارت محصول گل آزالیا -->
+
+                </div>
+                <!-- end products container -->
+
+                </div>
+                <!-- end products main -->
+
+            </div>
+            <!-- end products layout -->
+
+        </section>
+
+    </main>
+    <!-- end products page -->
+
+
+    <!-- start footer -->
+    <footer class="footer">
+        <p>تمام حقوق این سایت محفوظ است | خانه گل</p>
+    </footer>
+    <!-- end footer -->
+
+</body>
+
+</html>

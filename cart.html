@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید | خانه گل</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header class="header">
+        <h1>خانه گل</h1>
+
+        <nav class="navbar">
+            <a href="index.html">صفحه اصلی</a>
+            <a href="products.html">محصولات</a>
+            <a href="profile.html">پروفایل</a>
+            <a href="about.html">درباره ما</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start cart page -->
+    <main>
+
+        <section class="cart-section">
+
+            <h2>سبد خرید</h2>
+
+            <p class="cart-description">
+                محصولات انتخاب‌شده و مبلغ سفارش خود را در این صفحه مشاهده کنید.
+            </p>
+
+
+            <!-- start checkout steps -->
+            <div class="cart-steps">
+
+                <div class="cart-step active-step">
+                    <span>1</span>
+                    <p>سبد خرید</p>
+                </div>
+
+                <div class="cart-step">
+                    <span>2</span>
+                    <p>ثبت سفارش</p>
+                </div>
+
+                <div class="cart-step">
+                    <span>3</span>
+                    <p>تکمیل سفارش</p>
+                </div>
+
+            </div>
+            <!-- end checkout steps -->
+
+
+            <!-- start cart content -->
+            <div class="cart-content">
+
+                <!-- start cart products -->
+                <div class="cart-products">
+
+                    <!-- start cart item rose -->
+                    <div class="cart-item">
+
+                        <div class="cart-item-image">
+                            <img src="assets/imgs/rose.png" alt="گل رز قرمز">
+                        </div>
+
+                        <div class="cart-item-info">
+                            <h3>گل رز قرمز</h3>
+                            <p class="cart-product-name">Red Rose</p>
+                            <p>رنگ: قرمز</p>
+                            <p>تعداد شاخه: 12 شاخه</p>
+                        </div>
+
+                        <div class="cart-item-quantity">
+                            <label for="cart-rose-quantity">تعداد</label>
+                            <input type="number" id="cart-rose-quantity" name="rose-quantity" min="1" max="10" value="1">
+                        </div>
+
+                        <div class="cart-item-price">
+                            <p>قیمت</p>
+                            <span>250,000 تومان</span>
+                        </div>
+
+                        <div class="cart-item-remove">
+                            <a href="#">حذف</a>
+                        </div>
+
+                    </div>
+                    <!-- end cart item rose -->
+
+
+                    <!-- start cart item tulip -->
+                    <div class="cart-item">
+
+                        <div class="cart-item-image">
+                            <img src="assets/imgs/tulip.png" alt="گل لاله زرد">
+                        </div>
+
+                        <div class="cart-item-info">
+                            <h3>گل لاله زرد</h3>
+                            <p class="cart-product-name">Yellow Tulip</p>
+                            <p>رنگ: زرد</p>
+                            <p>تعداد شاخه: 10 شاخه</p>
+                        </div>
+
+                        <div class="cart-item-quantity">
+                            <label for="cart-tulip-quantity">تعداد</label>
+                            <input type="number" id="cart-tulip-quantity" name="tulip-quantity" min="1" max="10" value="1">
+                        </div>
+
+                        <div class="cart-item-price">
+                            <p>قیمت</p>
+                            <span>180,000 تومان</span>
+                        </div>
+
+                        <div class="cart-item-remove">
+                            <a href="#">حذف</a>
+                        </div>
+
+                    </div>
+                    <!-- end cart item tulip -->
+
+
+                    <!-- start cart buttons -->
+                    <div class="cart-page-buttons">
+                        <a href="products.html" class="continue-shopping-btn">ادامه خرید</a>
+                        <a href="#" class="clear-cart-btn">خالی کردن سبد خرید</a>
+                    </div>
+                    <!-- end cart buttons -->
+
+                </div>
+                <!-- end cart products -->
+
+
+                <!-- start order summary -->
+                <div class="order-summary">
+
+                    <h3>خلاصه سفارش</h3>
+
+                    <div class="summary-item">
+                        <span>مبلغ محصولات</span>
+                        <span>430,000 تومان</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>هزینه ارسال</span>
+                        <span>50,000 تومان</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>تخفیف</span>
+                        <span>0 تومان</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-total">
+                        <span>مبلغ نهایی</span>
+                        <span>480,000 تومان</span>
+                    </div>
+
+
+                    <!-- start discount box -->
+                    <div class="discount-box">
+                        <label for="discount-code">کد تخفیف</label>
+
+                        <div class="discount-input-box">
+                            <input type="text" id="discount-code" name="discount-code" placeholder="کد تخفیف را وارد کنید">
+                            <a href="#">اعمال</a>
+                        </div>
+                    </div>
+                    <!-- end discount box -->
+
+
+                    <a href="checkout.html" class="checkout-btn">
+                        ادامه فرایند ثبت سفارش
+                    </a>
+
+
+                    <div class="cart-secure-message">
+                        <h4>اطمینان از سفارش</h4>
+                        <p>
+                            پرداخت و ثبت سفارش در این پروژه به‌صورت نمایشی است و اطلاعات واقعی ذخیره نمی‌شوند.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- end order summary -->
+
+            </div>
+            <!-- end cart content -->
+
+        </section>
+
+    </main>
+    <!-- end cart page -->
+
+
+    <!-- start footer -->
+    <footer class="footer">
+        <p>تمام حقوق این سایت محفوظ است | خانه گل</p>
+    </footer>
+    <!-- end footer -->
+
+</body>
+
+</html>
