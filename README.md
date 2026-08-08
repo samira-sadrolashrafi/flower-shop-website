@@ -4,18 +4,15 @@ A responsive multi-page flower shop website built with HTML and CSS.
 
 ## Live Demo
 
-The live demo will be added after deployment with GitHub Pages.
-
-## Technologies Used
-
-- HTML5
-- CSS3
+[View the live website](https://samira-sadrolashrafi.github.io/flower-shop-website/)
 
 ## About the Project
 
-This project is a responsive front-end website for a flower shop.
+This project is a responsive front-end website designed for a flower shop.
 
-It includes multiple connected pages for browsing products, viewing product details, managing a shopping cart, completing an order, and viewing a user profile.
+It includes multiple connected pages that represent a complete flower shop user flow, including a home page, about page, product catalog, individual product details, shopping cart, checkout process, order confirmation, user profile, and contact page.
+
+The project focuses on creating a consistent visual experience across all pages while maintaining a responsive layout that adapts to different screen sizes.
 
 ## Pages
 
@@ -31,14 +28,39 @@ It includes multiple connected pages for browsing products, viewing product deta
 
 ## Features
 
-- Responsive layout
-- Multi-page website structure
-- Product listing and product details interface
-- Shopping cart and checkout interface
+- Responsive multi-page layout
+- Consistent design across all pages
+- Product listing interface
+- Individual product details page
+- Shopping cart interface
+- Checkout page
+- Order confirmation page
 - User profile page
 - Contact page
-- Consistent visual design across pages
+- Navigation between connected pages
+- Reusable visual patterns and consistent styling
 
-## Author
+## Technologies Used
 
-Samira Sadr
+- HTML5
+- CSS3
+
+## Project Structure
+
+```text
+flower-shop-website/
+├── index.html
+├── about.html
+├── products.html
+├── product-details.html
+├── cart.html
+├── checkout.html
+├── order-complete.html
+├── profile.html
+├── contact.html
+│
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── imgs/
+        └── project images
